@@ -2,6 +2,10 @@ import * as fs from 'fs';
 
 const readline = require('readline')
 
+/** Write a program that parses the supplied data file, and produces a list of products sorted by the highest aggregate _helpful_ score. 
+ * This list must also account for products with multiple reviews, giving priority to products with more reviews over products with the 
+ * same score but fewer reviews. You choose what data to include in your output. */
+
 interface Product {
   asin: string;
   helpful: number[];
